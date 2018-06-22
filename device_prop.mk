@@ -41,6 +41,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
 ro.build.shutdown_timeout=0
 sys.vendor.shutdown.waittime=500
 
+# UI
+sys.use_fifo_ui=1
+
 # Camera
 PRODUCT_PROPERTY_OVERRIDES += \
     camera.disable_zsl_mode=1 \
