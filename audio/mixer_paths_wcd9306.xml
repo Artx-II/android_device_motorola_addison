@@ -825,8 +825,8 @@
 		<ctl name="OUT1L Input 1" value="ISRC2INT1" />
 		<ctl name="ISRC2INT2 Input" value="SLIMRX6" />
 		<ctl name="OUT1R Input 1" value="ISRC2INT2" />
-		<ctl name="OUT1 Digital Volume" id="0" value="116" />
-		<ctl name="OUT1 Digital Volume" id="1" value="116" />
+		<ctl name="OUT1 Digital Volume" id="0" value="128" />
+		<ctl name="OUT1 Digital Volume" id="1" value="128" />
 		<ctl name="OUT1 Digital Switch" id="0" value="1" />
 		<ctl name="OUT1 Digital Switch" id="1" value="1" />
 	</path>
