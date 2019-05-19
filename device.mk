@@ -60,6 +60,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 PRODUCT_AAPT_CONFIG := normal
 
+PRODUCT_PACKAGES += qti-telephony-common
+PRODUCT_BOOT_JARS += telephony-ext
+
+
 # Dalvik
 PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.heapstartsize=8m \
