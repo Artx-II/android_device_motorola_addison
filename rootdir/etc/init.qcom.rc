@@ -59,9 +59,6 @@ on init
 
     write /sys/module/qpnp_rtc/parameters/poweron_alarm 1
 
-on post-fs-data
-    rm /data/logcat.txt
-
 on init && property:ro.boot.hardware.sku=*
     setprop ro.product.model ${ro.boot.hardware.sku}
     setprop ro.product.vendor.model ${ro.boot.hardware.sku}
@@ -76,11 +73,6 @@ on early-boot
     write /sys/kernel/boot_adsp/boot 1
     # Motorola uses external sensorhub, do not boot the slpi
     # write /sys/kernel/boot_slpi/boot 1
-
-service logcat_debug /system/bin/logcat -b all -f /data/logcat.txt -v threadtime
-    class main
-    user root
-    group system
 
 on boot
     # Mark the copy complete flag to not completed
