@@ -171,6 +171,9 @@ TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)
 include device/qcom/sepolicy/sepolicy.mk
 BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
 
+# Ignore SELinux neverallows
+SELINUX_IGNORE_NEVERALLOWS := true
+
 # Shim
 TARGET_LD_SHIM_LIBS := \
     /system/vendor/lib64/libmdmcutback.so|libqsap_shim.so \
