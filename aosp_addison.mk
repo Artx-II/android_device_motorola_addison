@@ -25,8 +25,8 @@ $(call inherit-product, device/motorola/addison/device.mk)
 $(call inherit-product-if-exists, vendor/motorola/addison/addison-vendor.mk)
 
 # Bootanimation
-TARGET_SCREEN_HEIGHT := 1280
-TARGET_SCREEN_WIDTH := 800
+TARGET_SCREEN_HEIGHT := 1920
+TARGET_SCREEN_WIDTH := 1080
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := addison
