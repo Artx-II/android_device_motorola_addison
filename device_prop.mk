@@ -44,6 +44,10 @@ sys.vendor.shutdown.waittime=500
 # UI
 sys.use_fifo_ui=1
 
+# Touch response
+persist.vendor.qti.inputopts.enable=true
+persist.vendor.qti.inputopts.movetouchslop=0.6
+
 # Camera
 PRODUCT_PROPERTY_OVERRIDES += \
     camera.disable_zsl_mode=1 \
