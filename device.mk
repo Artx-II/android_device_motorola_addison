@@ -60,6 +60,8 @@ PRODUCT_COPY_FILES += \
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 PRODUCT_AAPT_CONFIG := normal
 
+# Telephony
+TARGET_PROVIDES_QTI_TELEPHONY_JAR := true
 PRODUCT_PACKAGES += qti-telephony-common
 PRODUCT_BOOT_JARS += telephony-ext
 
