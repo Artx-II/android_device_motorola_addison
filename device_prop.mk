@@ -44,6 +44,9 @@ sys.vendor.shutdown.waittime=500
 # UI
 sys.use_fifo_ui=1
 
+# Renderer
+debug.hwui.renderer=skiagl
+
 # Touch response
 persist.vendor.qti.inputopts.enable=true
 persist.vendor.qti.inputopts.movetouchslop=0.6
