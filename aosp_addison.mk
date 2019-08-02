@@ -25,6 +25,10 @@ $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 $(call inherit-product, device/motorola/addison/device.mk)
 $(call inherit-product-if-exists, vendor/motorola/addison/addison-vendor.mk)
 
+# Bootanimation
+TARGET_SCREEN_HEIGHT := 1920
+TARGET_SCREEN_WIDTH := 1080
+
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := addison
 PRODUCT_NAME := aosp_addison
