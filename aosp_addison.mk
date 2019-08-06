@@ -16,7 +16,7 @@
 
 # Inherit from the common Open Source product configuration
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
-$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk
+$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 
 # Inherit from AOSP vendor
 $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
@@ -24,6 +24,9 @@ $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 # Inherit from addison device
 $(call inherit-product, device/motorola/addison/device.mk)
 $(call inherit-product-if-exists, vendor/motorola/addison/addison-vendor.mk)
+
+#GApps
+TARGET_GAPPS_ARCH := arm64
 
 # Bootanimation
 TARGET_SCREEN_HEIGHT := 1920

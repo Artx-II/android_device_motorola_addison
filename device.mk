@@ -61,7 +61,7 @@ PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 PRODUCT_AAPT_CONFIG := normal
 
 # Telephony
-TARGET_PROVIDES_QTI_TELEPHONY_JAR := true
+# TARGET_PROVIDES_QTI_TELEPHONY_JAR := true
 PRODUCT_PACKAGES += qti-telephony-common
 PRODUCT_BOOT_JARS += telephony-ext
 
@@ -276,6 +276,12 @@ PRODUCT_PACKAGES += \
 # Seccomp
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/seccomp_policy/mediacodec.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediacodec.policy
+
+# Telephony packages
+PRODUCT_PACKAGES += \
+    telephony-ext \
+    ims-ext-common \
+    services-ext
 
 # Sensors
 PRODUCT_PACKAGES += \
