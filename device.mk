@@ -81,6 +81,7 @@ PRODUCT_PACKAGES += \
     android.hardware.audio@2.0-service \
     android.hardware.audio.effect@2.0-impl \
     audiod \
+    audio_amplifier.msm8953 \
     audio.a2dp.default \
     audio.primary.msm8953 \
     audio.r_submix.default \
